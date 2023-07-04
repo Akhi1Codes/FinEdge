@@ -1,0 +1,120 @@
+<section id="contact">
+    <div class="container">
+    <p class="title">Contact</p>
+    <p class="titletext">We are a here to help.</p>
+    <div class="details-section">
+        <div class="contact-details">
+            <p class="contact-title">Contact FinEdge</p>
+            <p class="contact-description">Have something to say? We are here to help. Fill up the form or send email or call phone. </p>
+            <div class="full-details">
+                <p>&#8608; 1734 Sanfransico, CA 93063</p>
+                <p>&#8608; FinEdgehelpdesk.com</p>
+                <p>&#8608; +1 (987) 4587 899</p>
+            </div>
+        </div>
+            <div class="contact-form">
+                <lable>
+                    <input class="input-area" placeholder="Full Name" type="text"/>
+                </lable>
+                <lable>
+                    <input class="input-area" type="email" placeholder="Email Address" type="text"/>
+                </lable>
+                <lable>
+                    <textarea class="msg-input" placeholder="Your Message" rows="5" cols="40"/>
+                </lable>
+                <button>Send Message</button>
+            </div>
+    </div>
+    </div>
+</section>
+<style>
+    .container{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .title{
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 900;
+    }
+    .titletext{
+        text-align: center;
+        font-size: 18px;
+        color: rgb(75, 75, 75);
+        padding: 1rem;
+    }
+    .details-section{
+        display: flex;
+        justify-content: center;
+        max-width: 70%;
+        padding-block: 2rem;
+    }
+    .contact-title{
+        font-size: 1.5rem;
+        font-weight: 500;
+        padding: 1rem;
+
+    }
+    .contact-description{
+        padding: 1rem;
+        font-size: 1.2rem;
+        color: rgb(75, 75, 75);
+        line-height: 1.5rem;
+    }
+    .full-details{
+        padding: 1rem;
+        font-size: 1.1rem;
+        color: rgb(75, 75, 75);
+        line-height: 1.5rem;
+    }
+    .full-details >p{
+        padding-block: 0.2rem;
+    }
+    .contact-form{
+        display: flex;
+        flex-direction: column;
+        gap:1.5rem;
+    }
+    .input-area{
+        width: 100%;
+        height: 2.8rem;
+        border: 2px solid rgba(158, 158, 158, 0.664);
+        border-radius: 5px;
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+    .msg-input{
+        border: 2px solid rgba(158, 158, 158, 0.664);
+        border-radius: 5px;
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+    .input-area:focus,.msg-input:focus{
+        outline-style: none;
+        border: 2px solid rgba(27, 27, 27, 0.664);
+    }
+    button{
+        height: 3rem;
+        font-size: 1rem;
+        border-style: none;
+        border-radius: 5px;
+        background-color: black;
+        color: white;
+    }
+    @media screen and (max-width: 950px){
+        .container{
+            height: 100%;
+        }
+        .details-section{
+            flex-direction: column;
+            max-width: 95%;
+        }
+        .msg-input{
+            width: 100%;
+        }
+    }
+
+</style>

@@ -1,0 +1,66 @@
+<section class="home">
+    <div class="details">
+        <p class="headline">The Future of Cross-Border Payments.</p>
+        <p class="description">FinEdge is a global payments company that is simplifying cross-border payments. 
+            We offer a variety of payment solutions that allow businesses and individuals 
+            to send and receive money quickly, easily, and securely.</p>
+        <button class="button">Contact Us &#10503;</button>
+    </div>
+    <div class="image">
+        <img src="/src/assets/main.svg"/>
+    </div>
+</section>
+<style>
+.home{
+    display: flex;
+    margin-block: 6rem;
+    margin-inline: 1rem;
+}
+.details{
+    max-width: 50%;
+}
+.headline{
+    font-size:clamp(2rem,3.9rem,3.9rem);
+    font-weight: 900;
+    padding-block: 1rem;
+}
+.description{
+    font-weight: 400;
+    font-size: 18px;
+    color: rgb(75, 75, 75);
+    line-height: 1.6rem;
+    word-wrap: break-word;
+    padding-block: 1rem;
+}
+.button{
+    width: 10rem;
+    height: 2.8rem;
+    font-size: 1rem;
+    font-weight: 900;
+    background-color:black;
+    color:white;
+    border-style: none;
+    border-radius: 3px;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+@media screen and (max-width: 950px){
+    .home{
+        flex-direction: column-reverse;
+    }
+    .details{
+        max-width: 100%;
+    }
+    .image{
+        display: flex;
+        justify-content: center;
+    }
+    img{
+    max-width: 400px;
+    max-height: 300px;
+}
+    
+}
+</style>

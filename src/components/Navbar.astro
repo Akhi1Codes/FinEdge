@@ -1,0 +1,137 @@
+<nav class="navbar" id="home">
+    <div class="brand-title">FinEdge</div>
+    <a href="#" class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class="navbar-links">
+      <ul>
+        <li id="link"><a href="#home">Home</a></li>
+        <li id="link1"><a href="#about">About Us</a></li>
+        <li id="link2"><a href="#services">Services</a></li>
+        <li id="link3"><a href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+</nav>
+
+<script>
+
+    const toggleButton = document.getElementsByClassName('toggle-button')[0]
+const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+const Links = document.getElementById('link')
+const Links1 = document.getElementById('link1')
+const Links2 = document.getElementById('link2')
+const Links3 = document.getElementById('link3')
+
+toggleButton.addEventListener('click', () => {
+  navbarLinks.classList.toggle('active')
+})
+Links.addEventListener('click', () => {
+  navbarLinks.classList.toggle('active')
+})
+Links1.addEventListener('click', () => {
+  navbarLinks.classList.toggle('active')
+})
+Links2.addEventListener('click', () => {
+  navbarLinks.classList.toggle('active')
+})
+Links3.addEventListener('click', () => {
+  navbarLinks.classList.toggle('active')
+})
+</script>
+
+<style>
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: black;
+    padding-block: 0.5rem;
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin: .5rem;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color:rgb(87, 87, 87);
+    padding-block: 1rem;
+    padding-inline: 2rem;
+}
+
+.navbar-links li:hover {
+    background-color: #d6d6d6;
+    border-radius: 5px;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 1.2rem;
+    right: 2rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: 1rem 1rem;
+        margin: 0.5rem 0.5rem
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+</style>
