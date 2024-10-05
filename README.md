@@ -1,6 +1,6 @@
 # FinEdge Fintech
 
-Live Link : https://ar-akhil.github.io/FinEdge
+Live Link : https://akhi1codes.github.io/FinEdge/
 
 ## Design
 
